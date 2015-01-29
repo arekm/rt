@@ -345,4 +345,11 @@ have been overridden by CSS since 4.0.0, and thus did not affect
 display.  They have been removed, and setting them will trigger an
 informational message that setting them is ineffective.
 
+=head1 UPGRADING FROM 4.2.9 AND EARLIER
+
+The C<$DatabaseRequireSSL> option has never affected whether the
+database connection was performed using SSL, even under Postgres.  It
+has been removed, and setting it will trigger an informational message
+that setting it is ineffective.
+
 =cut
